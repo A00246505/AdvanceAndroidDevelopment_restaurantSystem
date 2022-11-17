@@ -48,4 +48,20 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="Resources\Fonts\materialdesignicons-webfont.ttf" />
+	  <None Remove="Resources\Images\cheeseburger.jpg" />
+	  <None Remove="Resources\Images\gratislevering.png" />
+	  <None Remove="Resources\Images\hamburger.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="NewPage1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="SignInPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
