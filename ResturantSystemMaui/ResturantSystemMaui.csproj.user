@@ -8,10 +8,10 @@
     <DefaultDevice>pixel_5_-_api_32</DefaultDevice>
   </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="NewPage1.xaml">
+    <MauiXaml Update="Views\NewPage1.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="SignInPage.xaml">
+    <MauiXaml Update="Views\SignInPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>

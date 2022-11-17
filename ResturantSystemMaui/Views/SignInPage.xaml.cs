@@ -1,4 +1,4 @@
-namespace ResturantSystemMaui;
+namespace ResturantSystemMaui.Views;
 
 public partial class SignInPage : ContentPage
 {
