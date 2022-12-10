@@ -4,6 +4,7 @@
              x:Class="ResturantSystemMaui.Views.NewPage1"
              Title="Register"
              Shell.NavBarIsVisible="False"
+             xmlns:handless="clr-namespace:ResturantSystemMaui.Handlers"
              xmlns:viewmodel="clr-namespace:ResturantSystemMaui.Models"
              x:DataType="viewmodel:SignUpViewModel">
     <Grid RowDefinitions="1*,8*,1*">
@@ -34,28 +35,28 @@
                     <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
                         <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
                             <Image VerticalOptions="Center" Source="user.png" HeightRequest="25" WidthRequest="25" />
-                            <Entry VerticalOptions="Center" Placeholder="Name" Grid.Column="1" />
+                            <handless:BorderLessEntry VerticalOptions="Center" Placeholder="Name" Grid.Column="1" />
                         </Grid>
                     </Frame>
 
                     <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
                         <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
                             <Image VerticalOptions="Center" Source="email.png" HeightRequest="25" WidthRequest="25" />
-                            <Entry VerticalOptions="Center" Placeholder="Email" Grid.Column="1" />
+                            <handless:BorderLessEntry VerticalOptions="Center" Placeholder="Email" Grid.Column="1" />
                         </Grid>
                     </Frame>
 
                     <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
                         <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
                             <Image VerticalOptions="Center" Source="mobile.png" HeightRequest="25" WidthRequest="25" />
-                            <Entry VerticalOptions="Center" Placeholder="Mobile Number" Grid.Column="1" />
+                            <handless:BorderLessEntry VerticalOptions="Center" Placeholder="Mobile Number" Grid.Column="1" />
                         </Grid>
                     </Frame>
 
                     <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
                         <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
                             <Image VerticalOptions="Center" Source="password.png" HeightRequest="25" WidthRequest="25" />
-                            <Entry VerticalOptions="Center" Placeholder="Password" IsPassword="True" Grid.Column="1" />
+                            <handless:BorderLessEntry VerticalOptions="Center" Placeholder="Password" IsPassword="True" Grid.Column="1" />
                         </Grid>
                     </Frame>
 
