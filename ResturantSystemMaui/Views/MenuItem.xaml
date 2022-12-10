@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ResturantSystemMaui.Models"
+             x:Class="ResturantSystemMaui.Views.MenuItem"
+             Title="MenuItem">
+
+    <ContentPage.BindingContext>
+        <local:MenuItemViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView ItemsSource="{Binding ItemList}">
+
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

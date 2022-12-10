@@ -17,4 +17,9 @@
         ContentTemplate="{DataTemplate views:NewPage1}"
         Route="SignUpPage" />
 
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate views:MenuItem}"
+        Route="MenuItemPage" />
+
 </Shell>
