@@ -1,4 +1,7 @@
-﻿namespace ResturantSystemMaui;
+﻿using ResturantSystemMaui.Models;
+using ResturantSystemMaui.Views;
+
+namespace ResturantSystemMaui;
 
 public static class MauiProgram
 {
@@ -14,6 +17,11 @@ public static class MauiProgram
                 fonts.AddFont("materialdesignicons-webfont.ttf", "IconFontTypes");
             });
 
-		return builder.Build();
+		builder.Services.AddTransient<NewPage1>();
+        builder.Services.AddTransient<SignUpViewModel>();
+        builder.Services.AddTransient<SignInPage>();
+        builder.Services.AddTransient<SigninViewModel>();
+
+        return builder.Build();
 	}
 }

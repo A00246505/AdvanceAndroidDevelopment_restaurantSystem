@@ -724,6 +724,9 @@
     <AppxPackagedFile Include="C:\Users\luvmo\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.27\lib\net6.0\WinRT.Runtime.dll">
       <PackagePath>WinRT.Runtime.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\luvmo\.nuget\packages\communitytoolkit.mvvm\8.0.0\lib\net6.0\CommunityToolkit.Mvvm.dll">
+      <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\luvmo\.nuget\packages\microsoft.extensions.configuration\6.0.1\lib\netstandard2.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
     </AppxPackagedFile>
@@ -826,6 +829,9 @@
     <AppxPackagedFile Include="C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
       <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\materialdesignicons-webfont.ttf">
+      <PackagePath>materialdesignicons-webfont.ttf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
       <PackagePath>OpenSans-Regular.ttf</PackagePath>
     </AppxPackagedFile>
@@ -925,6 +931,9 @@
     <AppxPackagedFile Include="C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\cheeseburger.scale-100.jpg">
+      <PackagePath>cheeseburger.scale-100.jpg</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -939,6 +948,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\gratislevering.scale-100.png">
+      <PackagePath>gratislevering.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-windows10.0.19041.0\win10-x64\resizetizer\r\hamburger.scale-100.png">
+      <PackagePath>hamburger.scale-100.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -56,16 +56,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Views\NewPage1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SignInPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Models\" />
 	</ItemGroup>
 
 </Project>

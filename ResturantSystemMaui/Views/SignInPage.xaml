@@ -2,54 +2,64 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ResturantSystemMaui.Views.SignInPage"
-             Title="Sign In">
-    <Grid>
-        <StackLayout Margin="20">
-            <Image Source="logo.png" HeightRequest="50"  HorizontalOptions="StartAndExpand"/>
+             Title="Sign In"
+             Shell.NavBarIsVisible="False"
+             xmlns:viewmodel="clr-namespace:ResturantSystemMaui.Models"
+             x:DataType="viewmodel:SigninViewModel">
+    <Grid RowDefinitions="1*,8*,1*">
+        <Frame BackgroundColor="LightBlue" Grid.Row="0" Margin="0,-80,-80,0" HorizontalOptions="EndAndExpand" Padding="0" HeightRequest="250" WidthRequest="250" CornerRadius="125">
+        </Frame>
 
-            <Label Style="{StaticResource welcome}" FontSize="32" Text="Resturant System"/>
+        <Frame BackgroundColor="{x:StaticResource Primary}" Grid.Row="0"
+              Margin="0,-120,-120,0" HorizontalOptions="EndAndExpand" Padding="0" HeightRequest="250" WidthRequest="250" CornerRadius="125">
 
-            <StackLayout Margin="0,80">
-                <Label Style="{StaticResource welcome}" FontSize="32" Text="Welcome Back"/>
-                <Label FontFamily="OpenSansRegular" TextColor="{StaticResource SecondaryColor}" 
-                       FontSize="16" Text="Sign in to continue"/>
-            </StackLayout>
+        </Frame>
 
-            <StackLayout>
-                <Label FontFamily="OpenSansRegular" TextColor="{StaticResource SecondaryColor}" 
-                       FontSize="16" Text="Username"/>
-                <Grid Margin="0,5">
-                    <Frame Opacity="0.3" BackgroundColor="White" CornerRadius="5"/>
-                    <Entry BackgroundColor="Transparent" Placeholder="Enter username" 
-                           TextColor="Black" Margin="5,0"
-                           PlaceholderColor="Gray" />
+        <Frame BackgroundColor="LightBlue" 
+              CornerRadius="0" Margin="0,0,40,0" Grid.Row="1" VerticalOptions="CenterAndExpand">
 
-                </Grid>
+            <VerticalStackLayout Spacing="25">
+                <Label Text="SIGN IN" FontSize="28" FontAttributes="Bold" />
 
-                <Label FontFamily="OpenSansRegular" TextColor="{StaticResource SecondaryColor}" 
-                       FontSize="16" Text="Password"/>
-                <Grid Margin="0,5">
-                    <Frame Opacity="0.3" BackgroundColor="White" CornerRadius="5"/>
-                    <Entry BackgroundColor="Transparent" Placeholder="Enter password" 
-                           TextColor="Black" Margin="5,0"
-                           PlaceholderColor="Gray" IsPassword="True"/>
 
-                </Grid>
-            </StackLayout>
+                <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                    <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
+                        <Image VerticalOptions="Center" Source="email.png" HeightRequest="25" WidthRequest="25" />
+                        <Entry Placeholder="Email" Grid.Column="1" />
+                    </Grid>
+                </Frame>
 
-            <Button Margin="0,15" BackgroundColor="{StaticResource SecondaryColor}"
-                    Text="Sign in" TextColor="{StaticResource PrimaryColor}" FontFamily="OpenSansBold"/>
+                <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                    <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
+                        <Image VerticalOptions="Center" Source="password.png" HeightRequest="25" WidthRequest="25" />
+                        <Entry Placeholder="Password" IsPassword="True" Grid.Column="1" />
+                    </Grid>
+                </Frame>
 
-            <StackLayout VerticalOptions="FillAndExpand" Orientation="Horizontal">
+                <Button CornerRadius="0" HeightRequest="60" Text="SIGN IN" FontSize="20" FontAttributes="Bold" />
+                <!--Lest create borderless entry -->
+                <Label FontAttributes="Bold" Text="Forgot Password?" TextColor="Gray" HorizontalTextAlignment="Center" />
+                <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                    <Label  FontAttributes="Bold" TextColor="Gray" Text="Don't have account?" VerticalTextAlignment="Center" />
+                    <Label  Text="SIGN UP" FontSize="18" 
+                           FontAttributes="Bold"
+                           TextColor="{x:StaticResource Primary}" />
 
-                <Label FontFamily="OpenSansRegular" TextColor="{StaticResource SecondaryColor}" 
-                       FontSize="16" Text="Forgot Password?" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand" 
-                       />
-                <Label FontFamily="OpenSansRegular" TextColor="{StaticResource SecondaryColor}" 
-                       FontSize="16" Text="Register"  VerticalOptions="EndAndExpand" 
-                       HorizontalOptions="EndAndExpand" 
-                       />
-            </StackLayout>
-        </StackLayout>
+                    <HorizontalStackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_For_SignUP" />
+                    </HorizontalStackLayout.GestureRecognizers>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+            
+        </Frame>
+
+        <Frame BackgroundColor="LightBlue" Grid.Row="2" 
+               Margin="0,0,0,-180" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand" Padding="0" HeightRequest="250" WidthRequest="250" CornerRadius="125">
+        </Frame>
+
+        <Frame BackgroundColor="{x:StaticResource Primary}" Grid.Row="2"
+              Margin="0,0,0,-200" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand" Padding="0" HeightRequest="250" WidthRequest="250" CornerRadius="125">
+
+        </Frame>
     </Grid>
 </ContentPage>

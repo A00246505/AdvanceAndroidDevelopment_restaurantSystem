@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "IAaoslKc8yVGUQglqg9iSY5SaxmR/MMCeyGBqqgMRP+wEKOvvE5S7u2bWXYZTG5ryEd30auNUc9GWoQp/AcrJw==",
+  "dgSpecHash": "VU/nSj5n4R/Z4zGOmrv+dO6IArTh6UTVoXcCpnAq3tnH9WI/M20LvlY/2jpmt6SD4s9VawEoVNined5QYv1o6A==",
   "success": true,
   "projectFilePath": "C:\\Users\\luvmo\\source\\repos\\ResturantSystemMaui\\ResturantSystemMaui\\ResturantSystemMaui.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\luvmo\\.nuget\\packages\\communitytoolkit.mvvm\\8.0.0\\communitytoolkit.mvvm.8.0.0.nupkg.sha512",
     "C:\\Users\\luvmo\\.nuget\\packages\\googlegson\\2.9.0.1\\googlegson.2.9.0.1.nupkg.sha512",
     "C:\\Users\\luvmo\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",
     "C:\\Users\\luvmo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

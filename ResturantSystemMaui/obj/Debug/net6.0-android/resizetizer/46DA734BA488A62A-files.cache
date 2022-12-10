@@ -1,6 +1,10 @@
 ﻿obj\Debug\net6.0-android\resizetizer\r\drawable\cheeseburger.jpg
+obj\Debug\net6.0-android\resizetizer\r\drawable\email.png
 obj\Debug\net6.0-android\resizetizer\r\drawable\gratislevering.png
 obj\Debug\net6.0-android\resizetizer\r\drawable\hamburger.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\mobile.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\password.png
+obj\Debug\net6.0-android\resizetizer\r\drawable\user.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-hdpi\splash.png
 obj\Debug\net6.0-android\resizetizer\r\drawable-mdpi\dotnet_bot.png
