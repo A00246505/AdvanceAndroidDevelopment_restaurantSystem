@@ -10,15 +10,31 @@
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-            <ListView ItemsSource="{Binding ItemList}">
+            <ListView ItemsSource="{Binding ItemList}"
+                      HasUnevenRows="True"
+                      SeparatorColor="Blue"
+                      SeparatorVisibility="None"
+                      IsPullToRefreshEnabled="True"
+                      RefreshControlColor="Red"
+                      >
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ImageCell
-                            Text="{Binding MenuItemName}" Detail="{Binding Price}"
-                            ImageSource="{Binding ImageUrl}"
-                            >
-                            
-                        </ImageCell>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuFlyoutItem Text="Add to Order"></MenuFlyoutItem>
+                            </ViewCell.ContextActions>
+                            <Grid Padding="10">
+                                <Frame CornerRadius="10" HasShadow="True">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Image Source="{Binding ImageUrl}" WidthRequest="100" HeightRequest="100"  />
+                                        <StackLayout VerticalOptions="Center" Padding="15">
+                                            <Label VerticalOptions="Center" Text="{Binding MenuItemName}" FontSize="Large" />
+                                            <Label VerticalOptions="Center" Text="{Binding Price}" FontSize="Large" />
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Frame>
+                            </Grid>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
