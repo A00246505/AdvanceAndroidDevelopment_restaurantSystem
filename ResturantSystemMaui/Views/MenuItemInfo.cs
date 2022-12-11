@@ -8,7 +8,7 @@ namespace ResturantSystemMaui.Views
 {
     public class MenuItemInfo
     {
-        public string MenuId { get; set; }
+        public int MenuId { get; set; }
         public string MenuItemName { get; set; }
 
         public string Price { get; set; }   

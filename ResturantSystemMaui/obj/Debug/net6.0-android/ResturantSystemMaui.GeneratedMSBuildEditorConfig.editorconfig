@@ -34,6 +34,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ResturantSystemMaui.Resour
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
+[C:/Users/luvmo/source/repos/ResturantSystemMaui/ResturantSystemMaui/Views/AddorEditMenuItem.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ResturantSystemMaui.Views.AddorEditMenuItem.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddorEditMenuItem.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddorEditMenuItem.xaml
+
 [C:/Users/luvmo/source/repos/ResturantSystemMaui/ResturantSystemMaui/Views/BarcodeScanner.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ResturantSystemMaui.Views.BarcodeScanner.xaml
@@ -45,6 +51,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ResturantSystemMaui.Views.MenuItem.xaml
 build_metadata.AdditionalFiles.TargetPath = Views\MenuItem.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\MenuItem.xaml
+
+[C:/Users/luvmo/source/repos/ResturantSystemMaui/ResturantSystemMaui/Views/MenuListAdminxaml.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ResturantSystemMaui.Views.MenuListAdminxaml.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MenuListAdminxaml.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MenuListAdminxaml.xaml
 
 [C:/Users/luvmo/source/repos/ResturantSystemMaui/ResturantSystemMaui/Views/NewPage1.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

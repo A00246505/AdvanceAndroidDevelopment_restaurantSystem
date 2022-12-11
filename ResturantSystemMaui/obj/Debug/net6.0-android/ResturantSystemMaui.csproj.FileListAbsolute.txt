@@ -984,10 +984,10 @@ C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\ne
 C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.s
-C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\android\environment.arm64-v8a.s
-C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.s
-C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\android\typemaps.arm64-v8a.o
-C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\android\environment.arm64-v8a.o
-C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\android\compressed_assemblies.arm64-v8a.o
-C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
+C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\android\typemaps.x86_64.s
+C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\android\environment.x86_64.s
+C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\android\compressed_assemblies.x86_64.s
+C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\android\typemaps.x86_64.o
+C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\android\environment.x86_64.o
+C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\android\compressed_assemblies.x86_64.o
+C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\app_shared_libraries\x86_64\libxamarin-app.so

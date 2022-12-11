@@ -27,4 +27,9 @@
         ContentTemplate="{DataTemplate views:BarcodeScanner}"
         Route="BarcodeScanner" />
 
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate views:MenuListAdminxaml}"
+        Route="MenuItemAdmin" />
+
 </Shell>

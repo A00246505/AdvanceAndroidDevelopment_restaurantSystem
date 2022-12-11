@@ -18,6 +18,6 @@ public partial class SignInPage : ContentPage
 
 	private async void Button_Clicked(object sender, EventArgs e)
 	{
-        await Shell.Current.GoToAsync("//MenuItemPage");
+        await Shell.Current.GoToAsync("//MenuItemAdmin");
     }
 }

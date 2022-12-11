@@ -13,4 +13,9 @@ public partial class MenuItem : ContentPage
 	{
         await Shell.Current.GoToAsync("//BarcodeScanner");
     }
+
+    private void MenuFlyoutItem_Clicked_1(object sender, EventArgs e)
+    {
+
+    }
 }
