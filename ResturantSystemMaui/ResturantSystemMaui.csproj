@@ -61,9 +61,13 @@
 
 	<ItemGroup>
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+	  <PackageReference Include="ZXing.Net.Maui" Version="0.1.0-preview.7" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\BarcodeScanner.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\MenuItem.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

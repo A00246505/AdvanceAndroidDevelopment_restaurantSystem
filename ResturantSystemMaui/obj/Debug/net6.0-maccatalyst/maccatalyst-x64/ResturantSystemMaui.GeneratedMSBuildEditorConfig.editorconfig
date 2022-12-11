@@ -5,6 +5,7 @@ build_property.UsingMicrosoftNETSdkWeb =
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = false
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ResturantSystemMaui
 build_property.ProjectDir = C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\
@@ -32,6 +33,12 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ResturantSystemMaui.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/luvmo/source/repos/ResturantSystemMaui/ResturantSystemMaui/Views/BarcodeScanner.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ResturantSystemMaui.Views.BarcodeScanner.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\BarcodeScanner.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\BarcodeScanner.xaml
 
 [C:/Users/luvmo/source/repos/ResturantSystemMaui/ResturantSystemMaui/Views/MenuItem.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml

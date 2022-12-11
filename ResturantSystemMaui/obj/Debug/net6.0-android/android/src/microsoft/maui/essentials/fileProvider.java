@@ -22,6 +22,14 @@ public class fileProvider
 			mono.android.TypeManager.Activate ("Microsoft.Maui.Storage.FileProvider, Microsoft.Maui.Essentials", "", this, new java.lang.Object[] {  });
 	}
 
+
+	public fileProvider (int p0)
+	{
+		super (p0);
+		if (getClass () == fileProvider.class)
+			mono.android.TypeManager.Activate ("Microsoft.Maui.Storage.FileProvider, Microsoft.Maui.Essentials", "System.Int32, System.Private.CoreLib", this, new java.lang.Object[] { p0 });
+	}
+
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)
 	{

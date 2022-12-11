@@ -8,4 +8,9 @@ public partial class MenuItem : ContentPage
 		
 
 	}
+
+	private async void MenuFlyoutItem_Clicked(object sender, EventArgs e)
+	{
+        await Shell.Current.GoToAsync("//BarcodeScanner");
+    }
 }

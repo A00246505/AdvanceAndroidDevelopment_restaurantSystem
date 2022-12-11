@@ -15,8 +15,8 @@ public final class R {
 	}
 	public static final class id {
 		public static final int nav_host_fragment_container = 0x7f080142;
-		public static final int sliding_pane_detail_container = 0x7f08019d;
-		public static final int sliding_pane_layout = 0x7f08019e;
+		public static final int sliding_pane_detail_container = 0x7f08019e;
+		public static final int sliding_pane_layout = 0x7f08019f;
 	}
 	public static final class styleable {
 		public static final int[] DialogFragmentNavigator = new int[] { 0x01010003 };

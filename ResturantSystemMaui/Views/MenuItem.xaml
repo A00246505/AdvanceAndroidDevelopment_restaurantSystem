@@ -21,7 +21,8 @@
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.ContextActions>
-                                <MenuFlyoutItem Text="Add to Order"></MenuFlyoutItem>
+                                <MenuFlyoutItem Text="Order" Clicked="MenuFlyoutItem_Clicked"></MenuFlyoutItem>
+                                <MenuFlyoutItem Text="Add to List" Clicked="MenuFlyoutItem_Clicked_1" ></MenuFlyoutItem>
                             </ViewCell.ContextActions>
                             <Grid Padding="10">
                                 <Frame CornerRadius="10" HasShadow="True">
@@ -37,6 +38,11 @@
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
+                <ListView.Header>
+                    <StackLayout Orientation="Horizontal"  HorizontalOptions="Center">
+                        <Label Text="Menu Items" FontSize="Large" TextColor="Black" />
+                    </StackLayout>
+                </ListView.Header>
             </ListView>
         </StackLayout>
     </ContentPage.Content>
