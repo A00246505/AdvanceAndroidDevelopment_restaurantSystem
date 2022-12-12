@@ -13,6 +13,8 @@ namespace ResturantSystemMaui.Models
     {
        private MenuItemInfo _itemInfo;
 
+        public INavigation Navigation { get; set; }
+
         public MenuItemInfo MenuItemInfo
         {
             get { return _itemInfo; }

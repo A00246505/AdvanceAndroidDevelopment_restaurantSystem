@@ -11,10 +11,17 @@
     
     
     <ContentPage.Content>
-        <StackLayout>
-            <Entry Placeholder="Menu Item Name" Text="{Binding MenuItem.MenuItemName}"></Entry>
-            <Entry Placeholder="Price" Text="{Binding MenuItem.Price}"></Entry>
-            <Button Text="Save" Clicked="Button_Clicked"></Button>
+        <StackLayout Spacing="5" Padding="15">
+            <Entry Text="{Binding MenuItemInfo.MenuId, Mode=TwoWay}" FontSize="Medium" IsEnabled="False" />
+            <Entry Placeholder="Menu Item Name" Text="{Binding MenuItemInfo.MenuItemName}"  FontSize="Medium"></Entry>
+            <Entry Placeholder="Price" Text="{Binding MenuItemInfo.Price}"  FontSize="Medium"></Entry>
+            <Entry Placeholder="ImageUrl" Text="{Binding MenuItemInfo.ImageUrl}"  FontSize="Medium">
+            </Entry>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Save" Command="{Binding SaveCommand}" HorizontalOptions="FillAndExpand" Clicked="Button_Clicked"></Button>
+                <Button Text="Cancel" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
+            </StackLayout>
+           
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

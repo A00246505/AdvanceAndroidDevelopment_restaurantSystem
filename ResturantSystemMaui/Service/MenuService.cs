@@ -1,4 +1,5 @@
-﻿using ResturantSystemMaui.Repository;
+﻿
+using ResturantSystemMaui.Repository;
 using ResturantSystemMaui.Views;
 using SQLite;
 using System;
@@ -18,24 +19,34 @@ namespace ResturantSystemMaui.Service
         _database.CreateTableAsync<MenuItemInfo>().Wait();
         
         }
-        public Task<bool> AddMenuAsync(MenuItemInfo menuItemInfo)
+        public async Task<bool> AddMenuAsync(MenuItemInfo menuItemInfo)
         {
-            throw new NotImplementedException();
+           if(menuItemInfo.MenuId > 0)
+            {
+                await _database.UpdateAsync(menuItemInfo);
+            }
+            else
+            {
+                await _database.InsertAsync(menuItemInfo);
+            }
+           return await Task.FromResult(true);
         }
 
-        public Task<bool> DeleteMenuAsync(int id)
+        public async Task<bool> DeleteMenuAsync(int id)
         {
-            throw new NotImplementedException();
+            await _database.DeleteAsync<MenuItemInfo>(id);
+            return await Task.FromResult(true); 
         }
 
-        public Task<IEnumerable<MenuItemInfo>> GetAllMenuAsync()
+        public async Task<IEnumerable<MenuItemInfo>> GetAllMenuAsync()
         {
-            throw new NotImplementedException();
+            return await Task.FromResult( await _database.Table<MenuItemInfo>().ToListAsync());
         }
 
-        public Task<MenuItemInfo> GetMenuAsync(int id)
+        public async Task<MenuItemInfo> GetMenuAsync(int id)
         {
-            throw new NotImplementedException();
+           return await _database.Table<MenuItemInfo>().Where(p=>p.MenuId == id).FirstOrDefaultAsync();
+
         }
 
         public Task<bool> UpdateMenuAsync(MenuItemInfo menuItemInfo)

@@ -14,9 +14,15 @@ namespace ResturantSystemMaui.Models
     {
         public ObservableCollection<MenuItemInfo> ItemList { get;  }
 
+        public Command AddMenuCommand { get; }
+
+        public Command MenuTappedEdit { get; }
+        public Command MenuTappedDelete { get; }
+        
+
         public Command LoadMenuItemCommand { get; }
 
-        public MenuItemViewModel()
+        public MenuItemViewModel(INavigation _navigation)
         {
             /*  ItemList = new ObservableCollection<MenuItemInfo>();
               ItemList.Add(new MenuItemInfo() { MenuId=1,MenuItemName= "Coffee",Price = "1500" , ImageUrl= "cheeseburger.jpg" });
@@ -41,6 +47,12 @@ namespace ResturantSystemMaui.Models
 
             LoadMenuItemCommand = new Command(async () => await ExecuteLoadMenuCommand());
             ItemList = new ObservableCollection<MenuItemInfo>();
+            AddMenuCommand = new Command(OnAddMenu);
+            MenuTappedEdit = new Command<MenuItemInfo>(OnEditMenu);
+            MenuTappedDelete = new Command<MenuItemInfo>(OnDeleteMenu);
+            Navigation = _navigation;
+
+
         }
 
         public async Task ExecuteLoadMenuCommand()
@@ -71,7 +83,31 @@ namespace ResturantSystemMaui.Models
 
         }
 
-
+        private async void OnAddMenu(object obj)
+        {
+            await Shell.Current.GoToAsync(nameof(AddorEditMenuItem));
+        }
         
+
+        private async void OnEditMenu(MenuItemInfo prod) {
+
+            await Navigation.PushAsync(new AddorEditMenuItem(prod));
+
+        }
+
+        private async void OnDeleteMenu(MenuItemInfo prod)
+        {
+
+           if(prod == null)
+            {
+                return;
+            }
+
+            await App.MenuService.DeleteMenuAsync(prod.MenuId);
+            await ExecuteLoadMenuCommand();
+
+        }
+
+
     }
 }

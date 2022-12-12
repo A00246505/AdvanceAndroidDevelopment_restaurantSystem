@@ -5,62 +5,73 @@
              Title="Sign In"
              xmlns:handless="clr-namespace:ResturantSystemMaui.Handlers"
              Shell.NavBarIsVisible="False"
+             xmlns:local ="clr-namespace:ResturantSystemMaui.Models"
              xmlns:viewmodel="clr-namespace:ResturantSystemMaui.Models"
              x:DataType="viewmodel:SigninViewModel">
-    <Grid RowDefinitions="1*,8*,1*">
-        <Frame BackgroundColor="LightBlue" Grid.Row="0" Margin="0,-80,-80,0" HorizontalOptions="EndAndExpand" Padding="0" HeightRequest="250" WidthRequest="250" CornerRadius="125">
-        </Frame>
 
-        <Frame BackgroundColor="{x:StaticResource Primary}" Grid.Row="0"
+    <ContentPage.BindingContext>
+        <local:SigninViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid RowDefinitions="1*,8*,1*">
+                <Frame BackgroundColor="LightBlue" Grid.Row="0" Margin="0,-80,-80,0" HorizontalOptions="EndAndExpand" Padding="0" HeightRequest="250" WidthRequest="250" CornerRadius="125">
+                </Frame>
+
+                <Frame BackgroundColor="{x:StaticResource Primary}" Grid.Row="0"
               Margin="0,-120,-120,0" HorizontalOptions="EndAndExpand" Padding="0" HeightRequest="250" WidthRequest="250" CornerRadius="125">
 
-        </Frame>
+                </Frame>
 
-        <Frame BackgroundColor="LightBlue" 
+                <Frame BackgroundColor="LightBlue" 
               CornerRadius="0" Margin="0,0,40,0" Grid.Row="1" VerticalOptions="CenterAndExpand">
 
-            <VerticalStackLayout Spacing="25">
-                <Label Text="SIGN IN" FontSize="28" FontAttributes="Bold" />
+                    <VerticalStackLayout Spacing="25">
+                        <Label Text="SIGN IN" FontSize="28" FontAttributes="Bold" />
 
 
-                <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
-                    <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
-                        <Image VerticalOptions="Center" Source="email.png" HeightRequest="25" WidthRequest="25" />
-                        <handless:BorderLessEntry Placeholder="Email" Grid.Column="1" />
-                    </Grid>
-                </Frame>
+                        <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                            <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
+                                <Image VerticalOptions="Center" Source="email.png" HeightRequest="25" WidthRequest="25" />
+                                <handless:BorderLessEntry Text="{Binding Name}" Placeholder="Email" Grid.Column="1" />
+                            </Grid>
+                        </Frame>
 
-                <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
-                    <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
-                        <Image VerticalOptions="Center" Source="password.png" HeightRequest="25" WidthRequest="25" />
-                        <handless:BorderLessEntry Placeholder="Password" IsPassword="True" Grid.Column="1" />
-                    </Grid>
-                </Frame>
+                        <Frame Padding="10" BorderColor="Transparent" CornerRadius="0">
+                            <Grid ColumnDefinitions="25,*" ColumnSpacing="10">
+                                <Image VerticalOptions="Center" Source="password.png" HeightRequest="25" WidthRequest="25" />
+                                <handless:BorderLessEntry Text="{Binding Password}" Placeholder="Password" IsPassword="True" Grid.Column="1" />
+                            </Grid>
+                        </Frame>
 
-                <Button CornerRadius="0" HeightRequest="60" Text="SIGN IN" FontSize="20" FontAttributes="Bold" Clicked="Button_Clicked" />
-                <!--Lest create borderless entry -->
-                <Label FontAttributes="Bold" Text="Forgot Password?" TextColor="Gray" HorizontalTextAlignment="Center" />
-                <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
-                    <Label  FontAttributes="Bold" TextColor="Gray" Text="Don't have account?" VerticalTextAlignment="Center" />
-                    <Label  Text="SIGN UP" FontSize="18" 
+                        <Button CornerRadius="0" HeightRequest="60" Text="SIGN IN" FontSize="20" FontAttributes="Bold" Command="{Binding LoginCommand}"  />
+                        <!--Lest create borderless entry -->
+                        <Label FontAttributes="Bold" Text="Forgot Password?" TextColor="Gray" HorizontalTextAlignment="Center" />
+                        <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                            <Label  FontAttributes="Bold" TextColor="Gray" Text="Don't have account?" VerticalTextAlignment="Center" />
+                            <Label  Text="SIGN UP" FontSize="18" 
                            FontAttributes="Bold"
                            TextColor="{x:StaticResource Primary}" />
 
-                    <HorizontalStackLayout.GestureRecognizers>
-                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_For_SignUP" />
-                    </HorizontalStackLayout.GestureRecognizers>
-                </HorizontalStackLayout>
-            </VerticalStackLayout>
-            
-        </Frame>
+                            <HorizontalStackLayout.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped_For_SignUP" />
+                            </HorizontalStackLayout.GestureRecognizers>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
 
-        <Frame BackgroundColor="LightBlue" Grid.Row="2" 
+                </Frame>
+
+                <Frame BackgroundColor="LightBlue" Grid.Row="2" 
                Margin="0,0,0,-180" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand" Padding="0" HeightRequest="250" WidthRequest="250" CornerRadius="125">
-        </Frame>
+                </Frame>
 
-        <Frame BackgroundColor="{x:StaticResource Primary}" Grid.Row="2"
+                <Frame BackgroundColor="{x:StaticResource Primary}" Grid.Row="2"
               Margin="0,0,0,-200" VerticalOptions="EndAndExpand" HorizontalOptions="StartAndExpand" Padding="0" HeightRequest="250" WidthRequest="250" CornerRadius="125">
 
-        </Frame>
-    </Grid>
+                </Frame>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+    
 </ContentPage>

@@ -13,7 +13,7 @@ public partial class App : Application
         {
             if(_menuService == null)
             {
-                _menuService = new MenuService(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"Resturant.db3"))
+                _menuService = new MenuService(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Resturant.db3"));
             }
             return _menuService;
         }

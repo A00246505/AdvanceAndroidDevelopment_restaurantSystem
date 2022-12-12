@@ -9,6 +9,8 @@ public partial class AppShell : Shell
 		InitializeComponent();
 
 		Routing.RegisterRoute(nameof(NewPage1), typeof(NewPage1));
+		Routing.RegisterRoute(nameof(AddorEditMenuItem), typeof(AddorEditMenuItem));
+        
 
-	}
+    }
 }

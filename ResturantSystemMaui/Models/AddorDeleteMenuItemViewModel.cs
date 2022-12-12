@@ -7,15 +7,37 @@ using System.Threading.Tasks;
 
 namespace ResturantSystemMaui.Models
 {
-    public class AddorDeleteMenuItemViewModel
+    public class AddorDeleteMenuItemViewModel : BaseMenuItemViewModel
     {
+        public Command SaveCommand { get; }
+        public Command CancelCommand { get; }
+        //public MenuItemInfo MenuItem { get; set; }
 
-        public MenuItemInfo MenuItem { get; set; }
+        public AddorDeleteMenuItemViewModel() {
 
-        public AddorDeleteMenuItemViewModel() { 
-        
-        MenuItem= new MenuItemInfo();
+            // MenuItem= new MenuItemInfo();
+
+            SaveCommand = new Command(OnSave);
+            CancelCommand = new Command(OnCancel);
+
+            this.PropertyChanged += (_, __) => SaveCommand.ChangeCanExecute();
+
+            MenuItemInfo = new MenuItemInfo();
         
         }   
+
+        private async void OnSave()
+        {
+            var menu = MenuItemInfo;
+            await App.MenuService.AddMenuAsync(menu);
+
+            await Shell.Current.GoToAsync("..");
+
+        }
+
+        private async void OnCancel()
+        {
+            await Shell.Current.GoToAsync("..");
+        }
     }
 }

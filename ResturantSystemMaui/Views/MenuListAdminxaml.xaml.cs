@@ -8,7 +8,7 @@ public partial class MenuListAdminxaml : ContentPage
 	public MenuListAdminxaml()
 	{
 		InitializeComponent();
-        BindingContext = menuViewModel = new MenuItemViewModel();
+        BindingContext = menuViewModel = new MenuItemViewModel(Navigation);
 	}
 
     private void MenuFlyoutItem_Clicked(object sender, EventArgs e)

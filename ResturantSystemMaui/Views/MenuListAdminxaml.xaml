@@ -5,28 +5,51 @@
              xmlns:view ="clr-namespace:ResturantSystemMaui.Views"
              x:Class="ResturantSystemMaui.Views.MenuListAdminxaml"
              Title="MenuListAdminxaml">
-    <ContentPage.BindingContext>
-        <local:MenuItemViewModel/>
-    </ContentPage.BindingContext>
+   
 
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Clicked="ToolbarItem_Clicked" />
+        <ToolbarItem Text="Add" Command="{Binding AddMenuCommand}" />
     </ContentPage.ToolbarItems>
     
     
     <ContentPage.Content>
         <StackLayout>
-            <RefreshView x:DataType="local:MenuItemViewModel" Command="{Binding LoadMenuItemCommand}}">
-                <CollectionView>
+            <RefreshView x:DataType="local:MenuItemViewModel" Command="{Binding LoadMenuItemCommand}" IsRefreshing="{Binding IsBusy, Mode=OneWay}">
+                <CollectionView ItemsSource="{Binding ItemList}" SelectionMode="None">
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
                             <StackLayout x:DataType="view:MenuItemInfo">
-                                <StackLayout Orientation="Horizontal">
-                                    <Image Grid.RowSpan="2" Source="{Binding ImageUrl}"></Image>
-                                    <StackLayout>
-                                        <Label Grid.Column=""></Label>
-                                    </StackLayout>      
-                                </StackLayout>
+                                <SwipeView>
+                                    <SwipeView.RightItems>
+                                        <SwipeItems>
+                                            <SwipeItem Text="Delete" BackgroundColor="Red" Command="{Binding Source={RelativeSource AncestorType={x:Type local:MenuItemViewModel}},
+                                                Path=MenuTappedDelete}" CommandParameter="{Binding .}" />
+                                            <SwipeItem IsDestructive="True" Text="Close" BackgroundColor="Green" />
+                                        </SwipeItems>
+                                    </SwipeView.RightItems>
+                               
+                            <Grid Padding="5">
+                                <Frame CornerRadius="10" HasShadow="True">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Image Grid.RowSpan="2" Source="{Binding ImageUrl}" Aspect="AspectFill" HeightRequest="60" WidthRequest="60"></Image>
+                                            <StackLayout>
+                                                <Label Grid.Column="1" TextColor="Black" Text="{Binding MenuItemName }" FontAttributes="Bold"></Label>
+                                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Price }" VerticalOptions="End"></Label>
+                                            </StackLayout>
+                                            <StackLayout VerticalOptions="Center" HorizontalOptions="EndAndExpand">
+                                                <Image Source="edit.png" Grid.Column="3" WidthRequest="30" HeightRequest="30">
+                                                    <Image.GestureRecognizers>
+                                                        <TapGestureRecognizer NumberOfTapsRequired="1" Command="{Binding Source={RelativeSource AncestorType={x:Type local:MenuItemViewModel }},Path=MenuTappedEdit}" CommandParameter="{Binding .}" />
+                                                    </Image.GestureRecognizers>
+                                                    
+                                                </Image>
+                                                    
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </Frame>
+                                
+                            </Grid>
+                                </SwipeView>
                             </StackLayout>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>

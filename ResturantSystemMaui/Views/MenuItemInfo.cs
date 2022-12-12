@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace ResturantSystemMaui.Views
 {
     public class MenuItemInfo
     {
+        
         public int MenuId { get; set; }
         public string MenuItemName { get; set; }
 
