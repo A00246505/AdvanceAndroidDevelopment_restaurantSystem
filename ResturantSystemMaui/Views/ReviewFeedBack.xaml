@@ -3,6 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ResturantSystemMaui.Views.ReviewFeedBack"
              Title="ReviewFeedBack">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Back" Clicked="ToolbarItem_Clicked_1" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
     <VerticalStackLayout>
         <Label 
             Text="Welcome to .NET MAUI!"
@@ -10,7 +16,10 @@
         
             <StackLayout>
                 <Editor Text="Please Provide Your Valuable feedback" BackgroundColor="#2c3e50" HeightRequest="100" />
-            </StackLayout>
+
+            <Button Text="Save" HorizontalOptions="Center" />
+        </StackLayout>
        
     </VerticalStackLayout>
+    </ContentPage.Content>
 </ContentPage>
