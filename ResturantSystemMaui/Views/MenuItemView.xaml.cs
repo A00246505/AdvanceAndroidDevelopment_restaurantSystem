@@ -31,4 +31,14 @@ public partial class MenuItem : ContentPage
         base.OnAppearing();
         menuViewModel.OnAppearing();
     }
+
+    private async void ToolbarItem_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("//Review");
+    }
+
+    private async void ToolbarItem_Clicked_1(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("//SignInPage");
+    }
 }

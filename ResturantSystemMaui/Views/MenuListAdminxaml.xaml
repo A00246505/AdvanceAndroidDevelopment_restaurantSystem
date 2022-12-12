@@ -9,6 +9,7 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Add" Command="{Binding AddMenuCommand}" />
+        <ToolbarItem Text="Logout" Clicked="ToolbarItem_Clicked_1" />
     </ContentPage.ToolbarItems>
     
     

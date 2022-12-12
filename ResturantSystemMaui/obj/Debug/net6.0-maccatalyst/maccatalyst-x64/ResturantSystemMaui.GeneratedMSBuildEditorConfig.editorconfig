@@ -64,6 +64,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ResturantSystemMaui.Views.
 build_metadata.AdditionalFiles.TargetPath = Views\NewPage1.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\NewPage1.xaml
 
+[C:/Users/luvmo/source/repos/ResturantSystemMaui/ResturantSystemMaui/Views/ReviewFeedBack.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ResturantSystemMaui.Views.ReviewFeedBack.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ReviewFeedBack.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ReviewFeedBack.xaml
+
 [C:/Users/luvmo/source/repos/ResturantSystemMaui/ResturantSystemMaui/Views/SignInPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ResturantSystemMaui.Views.SignInPage.xaml

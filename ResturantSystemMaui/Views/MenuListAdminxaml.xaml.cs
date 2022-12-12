@@ -27,4 +27,8 @@ public partial class MenuListAdminxaml : ContentPage
         menuViewModel.OnAppearing();
     }
 
+    private async void ToolbarItem_Clicked_1(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("//SignInPage");
+    }
 }

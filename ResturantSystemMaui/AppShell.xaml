@@ -32,4 +32,9 @@
         ContentTemplate="{DataTemplate views:MenuListAdminxaml}"
         Route="MenuItemAdmin" />
 
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate views:ReviewFeedBack}"
+        Route="Review" />
+
 </Shell>

@@ -8,6 +8,8 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Scan Table" Clicked="MenuFlyoutItem_Clicked" />
+        <ToolbarItem Text="Review" Clicked="ToolbarItem_Clicked" />
+        <ToolbarItem Text="Logout" Clicked="ToolbarItem_Clicked_1" />
     </ContentPage.ToolbarItems>
 
 
