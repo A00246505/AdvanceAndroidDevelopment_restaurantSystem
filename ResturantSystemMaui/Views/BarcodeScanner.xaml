@@ -4,6 +4,13 @@
              xmlns:barcode="clr-namespace:ZXing.Net.Maui.Controls;assembly=ZXing.Net.MAUI"
              x:Class="ResturantSystemMaui.Views.BarcodeScanner"
              Title="BarcodeScanner">
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Back" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
     <VerticalStackLayout>
         <barcode:CameraBarcodeReaderView x:Name="barcodeReader" WidthRequest="300" HeightRequest="300" IsDetecting="True" IsTorchOn="False" BarcodesDetected="CameraBarcodeReaderView_BarcodesDetected" />
         <VerticalStackLayout>
@@ -15,4 +22,6 @@
         </VerticalStackLayout>
 
     </VerticalStackLayout>
+
+    </ContentPage.Content>
 </ContentPage>

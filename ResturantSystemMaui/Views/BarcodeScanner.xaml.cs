@@ -25,4 +25,9 @@ public partial class BarcodeScanner : ContentPage
     {
 
     }
+
+    private async void ToolbarItem_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("//MenuItemPage");
+    }
 }
