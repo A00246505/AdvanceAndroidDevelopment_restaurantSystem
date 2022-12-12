@@ -1,10 +1,14 @@
+using ResturantSystemMaui.Models;
+
 namespace ResturantSystemMaui.Views;
 
 public partial class MenuListAdminxaml : ContentPage
 {
+    MenuItemViewModel menuViewModel;
 	public MenuListAdminxaml()
 	{
 		InitializeComponent();
+        BindingContext = menuViewModel = new MenuItemViewModel();
 	}
 
     private void MenuFlyoutItem_Clicked(object sender, EventArgs e)
@@ -16,4 +20,11 @@ public partial class MenuListAdminxaml : ContentPage
     {
         Navigation.PushAsync(new AddorEditMenuItem());
     }
+
+    protected override void OnAppearing()
+    {
+        base.OnAppearing();
+        menuViewModel.OnAppearing();
+    }
+
 }

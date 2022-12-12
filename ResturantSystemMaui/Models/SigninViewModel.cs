@@ -5,14 +5,14 @@ using System.ComponentModel;
 
 namespace ResturantSystemMaui.Models
 {
-    public partial class SigninViewModel : ObservableObject
+    public class SigninViewModel 
     {
        
 
-        [ObservableProperty]
+
         String name;
 
-        [ObservableProperty]
+  
         String password;
 
 

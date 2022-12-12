@@ -4,11 +4,5 @@
         <name>ResturantSystemMaui</name>
     </assembly>
     <members>
-        <member name="P:ResturantSystemMaui.Models.SigninViewModel.Name">
-            <inheritdoc cref="F:ResturantSystemMaui.Models.SigninViewModel.name"/>
-        </member>
-        <member name="P:ResturantSystemMaui.Models.SigninViewModel.Password">
-            <inheritdoc cref="F:ResturantSystemMaui.Models.SigninViewModel.password"/>
-        </member>
     </members>
 </doc>

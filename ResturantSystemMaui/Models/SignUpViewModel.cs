@@ -7,8 +7,12 @@ using System.Threading.Tasks;
 
 namespace ResturantSystemMaui.Models
 {
-    public partial class SignUpViewModel : ObservableObject
+    public class SignUpViewModel 
     {
+        string Name { get; set; }
+        string Email { get; set; }
+        string Contact { get; set; }
+        string Password { get; set; }
 
     }
 }

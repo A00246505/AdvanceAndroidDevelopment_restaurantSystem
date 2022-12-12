@@ -78,6 +78,10 @@
             "ZXing.Net.Maui": {
               "target": "Package",
               "version": "[0.1.0-preview.7, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
@@ -193,6 +197,10 @@
             "ZXing.Net.Maui": {
               "target": "Package",
               "version": "[0.1.0-preview.7, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
@@ -284,6 +292,10 @@
             "ZXing.Net.Maui": {
               "target": "Package",
               "version": "[0.1.0-preview.7, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [
@@ -377,6 +389,10 @@
             "ZXing.Net.Maui": {
               "target": "Package",
               "version": "[0.1.0-preview.7, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
             }
           },
           "imports": [

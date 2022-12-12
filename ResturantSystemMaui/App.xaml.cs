@@ -1,10 +1,23 @@
 ﻿using Microsoft.Maui.Platform;
 using ResturantSystemMaui.Handlers;
+using ResturantSystemMaui.Service;
 
 namespace ResturantSystemMaui;
 
 public partial class App : Application
 {
+    static MenuService _menuService;
+    public static MenuService MenuService
+    {
+        get
+        {
+            if(_menuService == null)
+            {
+                _menuService = new MenuService(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),"Resturant.db3"))
+            }
+            return _menuService;
+        }
+    }
     public App()
     {
         InitializeComponent();
