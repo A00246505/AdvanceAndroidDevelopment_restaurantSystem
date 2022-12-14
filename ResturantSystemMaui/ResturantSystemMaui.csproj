@@ -54,6 +54,7 @@
 	  <None Remove="Resources\Images\edit.png" />
 	  <None Remove="Resources\Images\gratislevering.png" />
 	  <None Remove="Resources\Images\hamburger.png" />
+	  <None Remove="Resources\Images\order.png" />
 	</ItemGroup>
 
 	<ItemGroup>

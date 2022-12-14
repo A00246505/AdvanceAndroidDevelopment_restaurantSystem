@@ -45,7 +45,7 @@ namespace ResturantSystemMaui.Service
 
         public async Task<MenuItemInfo> GetMenuAsync(int id)
         {
-           return await _database.Table<MenuItemInfo>().Where(p=>p.MenuId == id).FirstOrDefaultAsync();
+           return await _database.Table<MenuItemInfo>().Where(p=> p.MenuId == id).FirstOrDefaultAsync();
 
         }
 

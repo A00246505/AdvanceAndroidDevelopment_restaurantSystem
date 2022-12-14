@@ -9,7 +9,7 @@ namespace ResturantSystemMaui.Views
 {
     public class MenuItemInfo
     {
-        
+        [PrimaryKey,AutoIncrement]
         public int MenuId { get; set; }
         public string MenuItemName { get; set; }
 

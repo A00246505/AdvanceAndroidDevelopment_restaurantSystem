@@ -14,9 +14,14 @@ namespace ResturantSystemMaui.Models
     {
         public ObservableCollection<MenuItemInfo> ItemList { get;  }
 
+
+        public ObservableCollection<OrderListView> OrderList { get; }
+
         public Command AddMenuCommand { get; }
 
         public Command MenuTappedEdit { get; }
+
+        public Command MenuTappedOrder { get; }
         public Command MenuTappedDelete { get; }
         
 
@@ -49,20 +54,16 @@ namespace ResturantSystemMaui.Models
             ItemList = new ObservableCollection<MenuItemInfo>();
             AddMenuCommand = new Command(OnAddMenu);
             MenuTappedEdit = new Command<MenuItemInfo>(OnEditMenu);
+            MenuTappedOrder = new Command<OrderListView>(OnOrderMenu);
             MenuTappedDelete = new Command<MenuItemInfo>(OnDeleteMenu);
             Navigation = _navigation;
 
 
         }
 
-        public async Task ExecuteLoadMenuCommand()
+         async Task ExecuteLoadMenuCommand()
         {
             IsBusy= true;
-        }
-
-        public async void OnAppearing()
-        {
-           IsBusy= true;
             try
             {
                 ItemList.Clear();
@@ -71,15 +72,22 @@ namespace ResturantSystemMaui.Models
                 {
                     ItemList.Add(menu);
                 }
-            } 
-            catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw;
             }
             finally
             {
-                IsBusy= false;
+                IsBusy = false;
             }
+        }
+      
+        public async void OnAppearing()
+        {
+           IsBusy= true;
+
+
 
         }
 
@@ -91,7 +99,16 @@ namespace ResturantSystemMaui.Models
 
         private async void OnEditMenu(MenuItemInfo prod) {
 
+            
+
             await Navigation.PushAsync(new AddorEditMenuItem(prod));
+
+        }
+
+        private async void OnOrderMenu(MenuItemInfo prod)
+        {
+
+            OrderList.Add(prod);
 
         }
 
