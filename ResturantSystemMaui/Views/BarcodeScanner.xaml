@@ -11,17 +11,19 @@
     </ContentPage.ToolbarItems>
 
     <ContentPage.Content>
-    <VerticalStackLayout>
+    <StackLayout>
         <barcode:CameraBarcodeReaderView x:Name="barcodeReader" WidthRequest="300" HeightRequest="300" IsDetecting="True" IsTorchOn="False" BarcodesDetected="CameraBarcodeReaderView_BarcodesDetected" />
-        <VerticalStackLayout>
+        <StackLayout>
 
             <Label Padding="20" x:Name="barcodeResult" Text="Please Scan the table" FontSize="15" HorizontalOptions="Center" />
 
             <Button Text="Order" Clicked="Button_Clicked" HorizontalOptions="Center" />
 
-        </VerticalStackLayout>
+            <Label Padding="20" x:Name="result" Text="" FontAttributes="Bold" FontSize="15" HorizontalOptions="Center" />
 
-    </VerticalStackLayout>
+        </StackLayout>
+
+    </StackLayout>
 
     </ContentPage.Content>
 </ContentPage>
