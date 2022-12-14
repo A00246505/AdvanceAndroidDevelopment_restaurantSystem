@@ -15,9 +15,10 @@ namespace ResturantSystemMaui.Models
         public ObservableCollection<MenuItemInfo> ItemList { get;  }
 
 
-        public ObservableCollection<OrderListView> OrderList { get; }
-
+        public static ObservableCollection<MenuItemInfo> OrderList = new ObservableCollection<MenuItemInfo>();
         public Command AddMenuCommand { get; }
+
+        public Command OrdersMenuCommand { get; }
 
         public Command MenuTappedEdit { get; }
 
@@ -29,33 +30,32 @@ namespace ResturantSystemMaui.Models
 
         public MenuItemViewModel(INavigation _navigation)
         {
-            /*  ItemList = new ObservableCollection<MenuItemInfo>();
-              ItemList.Add(new MenuItemInfo() { MenuId=1,MenuItemName= "Coffee",Price = "1500" , ImageUrl= "cheeseburger.jpg" });
-              ItemList.Add(new MenuItemInfo() { MenuId = 2, MenuItemName = "Tea", Price = "1500", ImageUrl = "cheeseburger.jpg" });
-              ItemList.Add(new MenuItemInfo() { MenuId = 3, MenuItemName = "Moca", Price = "1500", ImageUrl = "cheeseburger.jpg" });
-              ItemList.Add(new MenuItemInfo() { MenuId = 4, MenuItemName = "Water", Price = "1500", ImageUrl = "cheeseburger.jpg" });
+           
+            /*
+                          MessagingCenter.Subscribe<AddorEditMenuItem, MenuItemInfo>(this, "AddorEditMenu", (Page, menu) =>
+                          {
+                              if (menu.MenuId == 0)
+                              {
+                                  menu.MenuId = ItemList.Count+1;
+                                  ItemList.Add(menu);
+                              }
+                              else
+                              {
+                                  MenuItemInfo menuItemInfo = ItemList.Where(prod => prod.MenuId == menu.MenuId).FirstOrDefault();
+                                  ItemList.Add(menu);
+                              }
+                          });
+                        */
 
-              MessagingCenter.Subscribe<AddorEditMenuItem, MenuItemInfo>(this, "AddorEditMenu", (Page, menu) =>
-              {
-                  if (menu.MenuId == 0)
-                  {
-                      menu.MenuId = ItemList.Count+1;
-                      ItemList.Add(menu);
-                  }
-                  else
-                  {
-                      MenuItemInfo menuItemInfo = ItemList.Where(prod => prod.MenuId == menu.MenuId).FirstOrDefault();
-                      ItemList.Add(menu);
-                  }
-              });
-            */
-
+           
             LoadMenuItemCommand = new Command(async () => await ExecuteLoadMenuCommand());
             ItemList = new ObservableCollection<MenuItemInfo>();
+           
             AddMenuCommand = new Command(OnAddMenu);
             MenuTappedEdit = new Command<MenuItemInfo>(OnEditMenu);
-            MenuTappedOrder = new Command<OrderListView>(OnOrderMenu);
+            MenuTappedOrder = new Command<MenuItemInfo>(OnOrderMenu);
             MenuTappedDelete = new Command<MenuItemInfo>(OnDeleteMenu);
+            OrdersMenuCommand = new Command(OnOrderCommand);
             Navigation = _navigation;
 
 
@@ -95,7 +95,13 @@ namespace ResturantSystemMaui.Models
         {
             await Shell.Current.GoToAsync(nameof(AddorEditMenuItem));
         }
-        
+
+        private async void OnOrderCommand(object obj)
+        {
+            await Shell.Current.GoToAsync(nameof(OrderedItemView));
+        }
+
+
 
         private async void OnEditMenu(MenuItemInfo prod) {
 
@@ -105,7 +111,7 @@ namespace ResturantSystemMaui.Models
 
         }
 
-        private async void OnOrderMenu(MenuItemInfo prod)
+        private void OnOrderMenu(MenuItemInfo prod)
         {
 
             OrderList.Add(prod);

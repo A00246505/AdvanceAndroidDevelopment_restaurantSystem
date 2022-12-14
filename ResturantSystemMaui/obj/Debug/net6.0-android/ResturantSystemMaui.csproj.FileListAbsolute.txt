@@ -37,6 +37,7 @@ C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\ne
 C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\resizetizer\r\drawable\gratislevering.png
 C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\resizetizer\r\drawable\hamburger.png
 C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\resizetizer\r\drawable\mobile.png
+C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\resizetizer\r\drawable\order1.png
 C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\resizetizer\r\drawable\password.png
 C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\resizetizer\r\drawable\user.png
 C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\resizetizer\r\mipmap-anydpi-v26\appicon.xml
@@ -997,4 +998,3 @@ C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\ne
 C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\luvmo\source\repos\ResturantSystemMaui\ResturantSystemMaui\obj\Debug\net6.0-android\resizetizer\r\drawable\order.png

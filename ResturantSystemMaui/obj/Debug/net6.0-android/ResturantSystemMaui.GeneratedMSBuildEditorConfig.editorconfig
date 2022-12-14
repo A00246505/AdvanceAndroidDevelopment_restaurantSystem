@@ -64,6 +64,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = ResturantSystemMaui.Views.
 build_metadata.AdditionalFiles.TargetPath = Views\NewPage1.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\NewPage1.xaml
 
+[C:/Users/luvmo/source/repos/ResturantSystemMaui/ResturantSystemMaui/Views/OrderedItemView.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ResturantSystemMaui.Views.OrderedItemView.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\OrderedItemView.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\OrderedItemView.xaml
+
 [C:/Users/luvmo/source/repos/ResturantSystemMaui/ResturantSystemMaui/Views/ReviewFeedBack.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = ResturantSystemMaui.Views.ReviewFeedBack.xaml

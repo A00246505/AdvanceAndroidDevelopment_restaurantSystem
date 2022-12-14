@@ -54,7 +54,7 @@
 	  <None Remove="Resources\Images\edit.png" />
 	  <None Remove="Resources\Images\gratislevering.png" />
 	  <None Remove="Resources\Images\hamburger.png" />
-	  <None Remove="Resources\Images\order.png" />
+	  <None Remove="Resources\Images\order1.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -87,6 +87,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\NewPage1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\OrderedItemView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\ReviewFeedBack.xaml">
